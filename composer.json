@@ -1,5 +1,5 @@
 {
-  "name": "package-name",
+  "name": "cmskit/wizard-durationpicker",
   "type": "library",
   "version": "0.7.0",
   "description": "A cms-kit wizard to set durations internally counted in seconds semantically",
@@ -12,15 +12,16 @@
   ],
   "homepage": "http://cms-kit.com",
 
-    "require": {
+  "require": {
     "php": ">=5.3.3",
-    "cmskit/lib-jquery-ui": "dev-master"
+    "cmskit/package-installer": "1.0.*@dev",
+    "cmskit/jquery-ui": "dev-master"
   },
     "extra":{
         "wizards":{
             "INTEGER": {
                 "description": "",
-                "embed": "wizard:duration\\nshow:years,months,days,hours,minutes"
+                "embed": "wizard:durationpicker\\nshow:years,months,days,hours,minutes"
             }
         }
     }
